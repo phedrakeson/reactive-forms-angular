@@ -1,11 +1,11 @@
-export interface ContactRequest {
-  personalData: PersonalData
+export class ContactRequest {
+  personalData: PersonalData = {} as PersonalData
   requestType: any
-  text: string
+  text: string = ''
 }
 
-export interface PersonalData {
-  email: string
-  mobile: string
-  country: string
+export class PersonalData {
+  email: string = 'email@example.com'
+  mobile: string = ''
+  country: string = ''
 }
